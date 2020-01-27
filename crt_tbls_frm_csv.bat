@@ -3,7 +3,8 @@ set DB_HOST=127.0.0.1
 set DB_PORT=5432
 set DB_NAME=testScriptDB
 set DB_USER=postgres
-set DB_PASSWORD=postgres
+
+set PGPASSWORD=postgres
 
 psql -h %DB_HOST% -p %DB_PORT% -U %DB_USER% -d %DB_NAME% -a -f ./sql/crt_tbl/crt_tbls_scdadl.sql 
 psql -h %DB_HOST% -p %DB_PORT% -U %DB_USER% -d %DB_NAME% -a -f ./sql/crt_tbl/crt_tbl_csv_component.sql
