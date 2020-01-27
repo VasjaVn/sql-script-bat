@@ -11,7 +11,7 @@ psql -h %DB_HOST% -p %DB_PORT% -U %DB_USER% -d %DB_NAME% -a -f ./sql/crt_tbl/crt
 psql -h %DB_HOST% -p %DB_PORT% -U %DB_USER% -d %DB_NAME% -a -f ./sql/crt_tbl/crt_tbl_csv_component_version.sql
 
 psql -h %DB_HOST% -p %DB_PORT% -U %DB_USER% -d %DB_NAME% -a -f ./sql/cp_frm_fl_csv/cp_frm_fl_components_csv.sql 
-rem psql -h %DB_HOST% -p %DB_PORT% -U %DB_USER% -d %DB_NAME% -a -f ./sql/cp_frm_fl_csv/cp_frm_fl_component_versions_csv.sql 
+psql -h %DB_HOST% -p %DB_PORT% -U %DB_USER% -d %DB_NAME% -a -f ./sql/cp_frm_fl_csv/cp_frm_fl_component_versions_csv.sql 
 
 rem psql -h %DB_HOST% -p %DB_PORT% -U %DB_USER% -d %DB_NAME% -a -f ./sql/feed_tbl/1_feed_tbl_platform.sql 
 rem psql -h %DB_HOST% -p %DB_PORT% -U %DB_USER% -d %DB_NAME% -a -f ./sql/feed_tbl/2_feed_tbl_component_group.sql 
